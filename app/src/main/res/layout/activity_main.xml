@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/colorBlack"
+    android:id="@+id/mainScreen"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="115dp"
+            android:layout_height="50dp"
+            android:weightSum="1"
+            android:id="@+id/relativeLayout"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="22dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imageView2"
+                android:background="@drawable/timer"
+                android:layout_weight="0.19"
+                android:layout_alignWithParentIfMissing="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentEnd="false" />
+
+            <TextView
+                    android:id="@+id/txtTempo"
+                    android:textColor="@color/colorText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="00:00 s"
+                    android:textSize="20dip"
+                android:layout_gravity="center"
+                android:layout_alignWithParentIfMissing="false"
+                android:gravity="right"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/imageView2">
+                </TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:weightSum="1"
+            android:layout_gravity="left|center_vertical"
+            android:id="@+id/relativeLayout3"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="false">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/speedometerImage"
+                android:background="@drawable/speedgreen"
+                android:adjustViewBounds="false"
+                android:layout_centerVertical="true" />
+
+            <com.ecocarunicamp.ecoapp.EcoTextView
+                android:id="@+id/txtVelocidade"
+                android:textColor="@color/colorText"
+                android:layout_width="300dp"
+                android:layout_height="fill_parent"
+                android:text="99"
+                android:textSize="250dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="62dp"
+                android:layout_alignParentEnd="true"
+                android:gravity="right"
+                android:layout_alignParentTop="false">
+
+            </com.ecocarunicamp.ecoapp.EcoTextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout3">
+
+            <TextView
+                    android:id="@+id/txtLongitude"
+                    android:textColor="@color/colorText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="unknown"
+                    android:textSize="20dip"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp">
+                </TextView>
+
+            <TextView
+                android:id="@+id/txtPotencia"
+                android:textColor="@color/colorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0 W"
+                android:textSize="20dip"
+                android:layout_gravity="center_horizontal|top"
+                android:gravity="left"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true">
+            </TextView>
+
+            <TextView
+                android:id="@+id/txtLatitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText"
+                android:text="unknown"
+                android:textSize="20dip"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true">
+            </TextView>
+
+            <TextView
+                    android:id="@+id/txtAngle"
+                    android:textColor="@color/colorText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20 graus"
+                    android:textSize="20dp"
+                android:gravity="center"
+                android:layout_below="@+id/txtPotencia"
+                android:layout_alignEnd="@+id/txtPotencia">
+                </TextView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:id="@+id/relativeLayout2"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/relativeLayout4"
+            android:layout_marginEnd="41dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageView4"
+                android:background="@drawable/energia"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                    android:id="@+id/txtEnergia"
+                    android:textColor="@color/colorText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                android:textSize="20dip"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/imageView4"
+                android:gravity="left"
+                android:text="0J">
+                </TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/relativeLayout"
+            android:layout_marginEnd="44dp"
+            android:id="@+id/relativeLayout4">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageView3"
+                android:background="@drawable/meanspeed"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                    android:id="@+id/txtVelocidadeGps"
+                    android:textColor="@color/colorText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="00km/h"
+                    android:textSize="20dip"
+
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/imageView3"
+                android:gravity="center">
+                </TextView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtRunNumber"
+            android:textColor="@color/colorText"
+            android:layout_width="wrap_content"
+
+
+
+            android:layout_height="wrap_content"
+            android:text="Run: 0"
+            android:textSize="20dip"
+            android:layout_alignParentStart="true"
+            android:editable="true"
+            android:layout_alignParentTop="true">
+        </TextView>
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/buttonStart"
+            android:background="@drawable/startflaggreen"
+            android:textColor="#ce2323"
+            android:longClickable="true"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_toStartOf="@+id/relativeLayout2" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

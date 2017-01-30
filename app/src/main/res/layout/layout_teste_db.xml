@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.22"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Botao1"
+            android:id="@+id/testedb_botao1"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.66" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_weight="0.05"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Botao2"
+            android:id="@+id/testedb_botao2"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.62" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.30"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Botao3"
+            android:id="@+id/testedb_botao3"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.39" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="207dp"
+            android:layout_height="13dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/Verify"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.35" />
+    </LinearLayout>
+</LinearLayout>
